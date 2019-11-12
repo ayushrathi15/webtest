@@ -2,8 +2,9 @@
 git remote rm origin
 git remote add origin https://github.com/ayushrathi15/webtest.git
 git pull origin master
-git checkout -b newwppush$(date +%d%b%H%M)
+a ="$(date +%d%b%H%M%S)"
+git checkout -b newwppush$a
 #run wordpress script here
 git add .
-git commit -m "new pull from wordpress $(date +%d%b%H%M)"
-git push --set-upstream origin newwppush$(date +%d%b%H%M)
+git commit -m "new pull from wordpress $a"
+git push --set-upstream origin newwppush$a
