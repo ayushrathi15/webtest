@@ -8,3 +8,4 @@ git checkout -b newwppush$a
 git add .
 git commit -m "new pull from wordpress $a"
 git push --set-upstream origin newwppush$a
+hub pull-request -m newpullrequest
